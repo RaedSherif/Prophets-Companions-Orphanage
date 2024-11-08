@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fill Out Form</title>
+    <link rel="stylesheet" href="AdminEMP.css">
+</head>
+<body>
+
+    <h1>Absence Form</h1>
+    <br>
+    <br>
+    <h2>Cant come today?<br>
+        please fill out this form to let your manager know that you’re not coming today to avoid any cause of complications<br>
+        please state your reason of absence clearly and simple.</h2><br>
+        <h5><u>(The manager will reach out to you as soon as he can after you submiting the form)</u></h5>
+    <br><br><br><br>
+    <form method="get" >
+        <table border="1" align="center">
+           <tr>
+            <td>First Name</td>
+            <td> <input type="text" required></td>
+           </tr> 
+           <tr>
+            <td>Last Name</td>
+            <td> <input type="text" required></td>
+           </tr>
+           <tr>
+            <td>Phone Number</td>
+            <td><input type="tel" name="Phone" id="number" required></td>
+           </tr>
+           <tr>
+            <td>Reason Of Apsence</td>
+            <td>
+                <textarea rows="10" cols="30"></textarea>
+            </td>
+           </tr>
+           <tr>
+            <td colspan="2" align="center"><button type="button" onclick="alert('Thank you for submitting, your manager will reach out to you soon')"> Report</button></td>
+           </tr>
+        </table>
+    </form>
+</body>
+</html>
