@@ -43,3 +43,11 @@ font-size: 18pt;
     margin-right: auto;
     width: 100%;
 }
+.table2
+{
+    text-align: center;
+    width: 80%;
+    border: 1px solid green;
+    margin-left: auto;
+    margin-right: auto;
+}
