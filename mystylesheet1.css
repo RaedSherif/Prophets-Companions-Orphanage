@@ -23,4 +23,23 @@ font-size: 18pt;
     text-align: center;
     width: 30%;
 }
-
+.table1
+{
+    text-align: center;
+    width: 60%;
+    border: 1px solid;
+    margin-left: auto;
+    margin-right: auto;
+}
+.td2
+{
+    border: 1px solid;
+    width: 50%;
+}
+.center1
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
