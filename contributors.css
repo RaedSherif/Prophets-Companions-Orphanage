@@ -8,16 +8,13 @@
     text-align: center;
 }
 
-.logo-item img {
-    width: 100px; /* Set width for uniform size */
-    height: 100px; /* Set height for uniform size */
-    object-fit: contain; /* Keeps logo aspect ratio */
-    margin-bottom: 10px; /* Space between image and caption */
-}
-
-.logo-item p {
-    font-size: 14px; /* Adjust as needed */
-    color: #333; /* Adjust color as needed */
+.contributors-logo-grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+  }
 }
 
 .header {
@@ -63,27 +60,4 @@ nav a:hover{
     border-bottom: green solid;
 }
 
-#Contribute form {
-    display: grid;
-    grid-template-columns: 150px 1fr; /* Label and input columns */
-    gap: 10px 15px;
-    max-width: 400px; /* Adjust width as needed */
-}
-
-#Contribute label {
-    text-align: right;
-    font-weight: bold;
-}
-
-#Contribute input[type="text"],
-#Contribute input[type="email"] {
-    width: 100%;
-    padding: 5px;
-    box-sizing: border-box;
-}
-
-#Contribute input[type="submit"] {
-    grid-column: 2; /* Align submit button to the left */
-    padding: 8px 12px;
-    cursor: pointer;
-}
+#contribute
