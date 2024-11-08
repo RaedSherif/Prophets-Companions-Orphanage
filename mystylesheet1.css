@@ -1,0 +1,26 @@
+.div1
+{
+margin: 10px;
+padding: 100px;
+display:block ;
+text-align: justify;
+font-size: 18pt;
+}
+.center
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.td1
+{
+    text-align: center;
+    width:50% ;
+}
+.table2
+{
+    text-align: center;
+    width: 30%;
+}
+
