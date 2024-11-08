@@ -84,12 +84,16 @@
      <br><br><br>
      <br><br><br>
      <br><br><br>
-     <table border="1">
+     <div class="Events">
+        <h2><u>Upcoming Events</u></h2><br>
+    </div>
+    <br>
+     <table border="1" width="50%">
         <tr>
             <td><strong>Event Name</strong></td>
             <td><strong>Amount of People registered</strong></td>
             <td><strong>State</strong></td>
-            <td>Date</td>
+            <td><strong>Date</strong></td>
         </tr>
         <tr>
             <td>Sports Day</td>
@@ -122,28 +126,68 @@
             <td>2/1/2025</td>
         </tr>
     </table>
-    
-    <div class="Events">
-        <h2>Event names:</h2><br>
-    </div>
+    <br>
+    <br>
+    <br>
     
     <h3><dt>Sports Day</dt></h3><br>
-    <dd>Sports Day is an event focused on promoting physical activity, teamwork, and fun for the children at the orphanage. Volunteers organize games like soccer, basketball, relay races, and tug-of-war. The event may also include sports-themed donations, such as new equipment for the orphanage’s recreational activities.</dd>
+    <dd> Sports Day is an event focused on promoting physical activity, teamwork, and fun for the children at the orphanage.<br>
+         Volunteers organize games like soccer, basketball, relay races, and tug-of-war. The event may also include sports-themed donations, <br>
+         such as new equipment for the orphanage’s recreational activities.</dd>
     
     <h3><dt>Community Art Workshop</dt></h3><br>
-    <dd>The Community Art Workshop provides a creative outlet for children at the orphanage and local community members to work together on an art project. This event could include painting, sculpture, or crafting sessions. The artwork created could be displayed at a local gallery or auctioned off to raise funds for the orphanage.</dd>
+    <dd>The Community Art Workshop provides a creative outlet for children at the orphanage and local community members to work together on an art project. <br>
+        This event could include painting, sculpture, or crafting sessions.<br>
+         The artwork created could be displayed at a local gallery or auctioned off to raise funds for the orphanage.</dd>    
     
-    <h3><dt>Holiday Celebration Party</dt></h3><br>
-    <dd>The Holiday Celebration Party is an event where the orphanage hosts a festive gathering to celebrate Christmas, Eid, or other local holidays. The children are treated to decorations, music, a gift exchange, and a holiday meal. The event may also include performances by local entertainers and a special visit from Santa Claus or another holiday figure.</dd>
+         <h3><dt>Holiday Celebration Party</dt></h3><br>
+    <dd> The Holiday Celebration Party is an event where the orphanage hosts a festive gathering to celebrate Christmas, Eid, or other local holidays.<br>
+         The children are treated to decorations, music, a gift exchange, and a holiday meal.<br>
+          The event may also include performances by local entertainers and a special visit from Santa Claus or another holiday figure.</dd>
     
-    <h3><dt>Adoption Awareness Campaign</dt></h3><br>
-    <dd>The Adoption Awareness Campaign is an event to spread awareness about the children who are available for adoption. The event includes presentations, sharing success stories of past adoptions, and providing information for prospective adoptive parents. The goal is to find permanent homes for children in need.</dd>
+          <h3><dt>Adoption Awareness Campaign</dt></h3><br>
+    <dd>The Adoption Awareness Campaign is an event to spread awareness about the children who are available for adoption.<br>
+        The event includes presentations, sharing success stories of past adoptions, and providing information for prospective adoptive parents.<br>
+         The goal is to find permanent homes for children in need.</dd>    
     
     <h3><dt>Fitness for Kids Charity Run</dt></h3><br>
-    <dd>Fitness for Kids is a charity run or walk designed to promote healthy living while raising money for the orphanage. Participants can register for the run, with all the proceeds going to the orphanage. The event can also have a fun, interactive element, such as a "Kids Run" for children to participate in alongside their parents.</dd>
-    
-
-    
+    <dd>Fitness for Kids is a charity run or walk designed to promote healthy living while raising money for the orphanage.<br>
+         Participants can register for the run, with all the proceeds going to the orphanage. <br>
+         The event can also have a fun, interactive element, such as a "Kids Run" for children to participate in alongside their parents.</dd>
+         <br>
+         <br>
+         <br>
+         <hr>
+         <form action="submit_form.php">
+            <h3>Report an Issue</h3>
+            <label for="problem-type">Select the type of problem you encountered:</label>
+            <select id="problem-type" name="problem_type" required>
+                <option value="technical">Technical Issue (Broken links, errors, etc.)</option>
+                <option value="design">Design/Usability Issues (Difficult navigation, readability, etc.)</option>
+                <option value="functionality">Functionality Issues (Forms, buttons not working, etc.)</option>
+                <option value="content">Content Issues (Typos, missing information, etc.)</option>
+                <option value="security">Security Issues (Phishing, account issues, etc.)</option>
+                <option value="performance">Performance Issues (Slow loading, lag, etc.)</option>
+                <option value="accessibility">Accessibility Issues (Screen reader issues, font size, etc.)</option>
+                <option value="other">Other (Please specify below)</option>
+            </select>
+            
+            <br><br>
+        
+            <label for="issue-description">Describe the issue:</label><br>
+            <textarea name="description" rows="5" cols="40" required></textarea>
+            
+            <br><br>
+            
+            <label for="contact-email">Your Email:</label><br>
+            <input type="email" id="contact-email" name="contact_email" placeholder="Your email address">
+            
+            <br><br>
+            
+            <button type="button" onclick="alert('Your Report have been Sent, rest assured')">Send</button>
+        </form>
+        </body>
+        </html>
      
 
        

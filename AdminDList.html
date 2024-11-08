@@ -176,5 +176,34 @@
             <td>11/08/2024</td>
         </tr>
     </table>
+
+<form action="submit_form.php">
+    <h3>Report an Issue</h3>
+    <label for="problem-type">Select the type of problem you encountered:</label>
+    <select id="problem-type" name="problem_type" required>
+        <option value="technical">Technical Issue (Broken links, errors, etc.)</option>
+        <option value="design">Design/Usability Issues (Difficult navigation, readability, etc.)</option>
+        <option value="functionality">Functionality Issues (Forms, buttons not working, etc.)</option>
+        <option value="content">Content Issues (Typos, missing information, etc.)</option>
+        <option value="security">Security Issues (Phishing, account issues, etc.)</option>
+        <option value="performance">Performance Issues (Slow loading, lag, etc.)</option>
+        <option value="accessibility">Accessibility Issues (Screen reader issues, font size, etc.)</option>
+        <option value="other">Other (Please specify below)</option>
+    </select>
+    
+    <br><br>
+
+    <label for="issue-description">Describe the issue:</label><br>
+    <textarea name="description" rows="5" cols="40" required></textarea>
+    
+    <br><br>
+    
+    <label for="contact-email">Your Email:</label><br>
+    <input type="email" id="contact-email" name="contact_email" placeholder="Your email address">
+    
+    <br><br>
+    
+    <button type="button" onclick="alert('Your Report have been Sent, rest assured')">Send</button>
+</form>
 </body>
 </html>
