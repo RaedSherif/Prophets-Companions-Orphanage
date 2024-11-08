@@ -1,59 +1,73 @@
-<html>
-
-    
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <link rel="stylesheet" href="activites.css">
     <title>Activities</title>
 </head>
-
-
-
 <body>
-    <div class="header">
-    <nav> 
-        <a href="activites_page1.html">Sports</a> 
-        <a href="activites_page2.html">Art</a> 
-        <a href="activites_page3.html">Board Games</a> 
-        <a href="activites_page4.html">Story Time</a> 
 
-    </nav>
-    </div>
+<header>
+    <h1>Activities</h1>
+    <p><br><br><br>Discover engaging activities that help nurture creativity, teamwork, and fun for children.</p>
+</header>
 
-
+<section>
     <div class="volunteering_types">
         <table style="table-layout: fixed; width: 100%;" align="center">
             <tr>
-                <td>Sports</td>
-                <td>Art</td>
-                <td>Board Games</td>
-                <td>Story Time</td>
+                <td><a href="activites_page1.html">Sports</a></td>
+                <td><a href="activites_pages2.html">Art</a></td>
+                <td><a href="activites_page3.html">Board Games</a></td>
+                <td><a href="activites_page4.html">Story Time</a></td>
             </tr>
             <tr>
                 <td><img src="4724314993_e32094f035_b.jpg" alt="Sports"></td>
-                <td><img src="fuskjfbsof.jpeg" alt="Art_activites"></td>
+                <td><img src="fuskjfbsof.jpeg" alt="Art Activities"></td>
                 <td><img src="ddddddddddddddddddd.jpeg" alt="Board Games"></td>
-                <td><img src="fnosgbjsbglslgs.jpeg" alt="story Time"></td>
-
+                <td><img src="fnosgbjsbglslgs.jpeg" alt="Story Time"></td>
             </tr>
             <tr>
-                <td>hiiii</td>
-                <td>hiiiiiii</td> 
-                <td>hiiiiiii</td>
-                <td>hiiiiiiii</td>
+                <td>Sports Activities:</td>
+                <td>Art Activities:</td> 
+                <td>Board Games:</td>
+                <td>Story Time:</td>
             </tr>
             <tr>
-                <td><ul>hiiiii
-                    <ul >hiiiiiiii</ul></td>
-                <td>hiiiii</td>
-                <td>hiiiiiiii</td>
+                <td>
+                    Engage in various sports to build teamwork, physical fitness, and self-discipline. Activities include soccer, basketball, and relay races.
+                </td>
+                <td>
+                    Explore creativity through painting, drawing, and crafts. Art activities encourage self-expression and boost confidence.
+                </td>
+                <td>
+                    Board games develop strategic thinking and social skills. Children enjoy classics like chess, checkers, and puzzle games.
+                </td>
+                <td>
+                    Story time sessions offer immersive tales that help children develop language skills and imagination.
+                </td>
             </tr>
-           
-
         </table>
     </div>
+</section>
 
+<form action="submit_application.html" method="POST">
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
 
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
 
+    <label for="phone">Phone Number:</label><br>
+    <input type="tel" id="phone" name="phone" required><br><br>
+
+    <label for="experience">Do you have experience volunteering or participating in npo activities?:</label><br>
+    <input type="text" id="experience" name="experience" required><br><br>
+
+    <label for="motivation">Why would you like to volunteer with us?</label><br>
+    <input type="text" id="motivation" name="motivation" required><br><br>
+
+    <input type="submit" value="Submit Application">
+</form>
 
 </body>
 </html>
