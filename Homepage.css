@@ -23,7 +23,7 @@
     background-color: #ccc; /* Line color */
     margin: 0 20px; /* Space around the divider */
 }
-p.p1{
+p{
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
     color: rgb(2, 87, 2);
