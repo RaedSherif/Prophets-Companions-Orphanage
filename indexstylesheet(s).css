@@ -1,52 +1,149 @@
+/* Main header styling */
 .header {
     display: flex;
     align-items: center;
-    padding: 20px;
+    justify-content: space-between; /* Align logo, nav, and text evenly */
+    padding: 20px 40px; /* Add horizontal padding for breathing space */
     background-color: #ff7700a3;
 }
 
+/* Logo styling */
 .logo {
-    width: 140px;
-    height: 140px;
+    width: 120px; /* Slightly reduced for better proportion */
+    height: auto;
+    margin-right: 20px; /* Space between logo and divider */
 }
 
+/* Divider styling */
+.vertical-divider, .vertical-divider2 {
+    width: 1px;
+    height: 60px;
+    background-color: #ccc;
+    margin: 0 15px; /* Slightly reduced margin to bring elements closer */
+}
 
-.vertical-divider {
-    width: 1px; /* Thin line */
-    height: 60px; /* Adjust height */
-    background-color: #ccc; /* Line color */
-    margin: 0 20px; /* Space around the divider */
-}
-.vertical-divider2 {
-    width: 1px; /* Thin line */
-    height: 60px; /* Adjust height */
-    background-color: #ccc; /* Line color */
-    margin: 0 20px; /* Space around the divider */
-}
-p{
+/* Tagline text styling */
+p {
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
     color: rgb(2, 87, 2);
+    margin-left: 20px; /* Add spacing from the vertical divider */
+    max-width: 200px; /* Limit width for better alignment on larger screens */
+    line-height: 1.4; /* Improve readability */
 }
 
+/* Navigation link styling */
+nav {
+    display: flex;
+    gap: 25px; /* Consistent spacing between links */
+}
 
 nav a {
     text-decoration: none;
     color: #ffffff;
     font-size: 16px;
-    margin-left: 40px;
+    padding-bottom: 3px; /* Space for underline effect */
+    transition: border-bottom 0.3s; /* Smooth transition for hover effect */
 }
 
-nav a:hover{
-    border-bottom: green solid;
+nav a:hover {
+    border-bottom: 2px solid green; /* Thicker underline for visibility */
 }
-.second{
-    border: 5px green solid;
-}
-#container{
+
+/* Section container styling */
+#container {
     background-color: #0345002d;
+    padding: 20px;
 }
 
-#picture{
-    margin: 150px;
+/* Image section styling */
+#picture {
+    margin: 80px; /* Reduce margin for better alignment */
+}
+
+
+
+
+
+/* CSS FOR FOOTER */
+
+
+.footer {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.footer-divider {
+    width: 50px;
+    margin: 0 auto 20px;
+    border: 1px solid #4a4a4a;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    color: #f3c300;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section address {
+    color: #dcdcdc;
+    line-height: 1.6;
+    margin: 5px 0;
+}
+
+.learn-more,
+.subscribe {
+    color: #f3c300;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.learn-more:hover,
+.subscribe:hover {
+    text-decoration: underline;
+}
+
+.footer-section a {
+    color: #dcdcdc;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: #f3c300;
+}
+
+.footer-section p a {
+    color: #dcdcdc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-section p a:hover {
+    color: #f3c300;
 }
