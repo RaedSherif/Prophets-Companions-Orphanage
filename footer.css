@@ -1,0 +1,19 @@
+footer {
+    text-align: center;
+    margin: 0; /* Removes any default margin */
+    padding: 10px 0; /* Optional padding for spacing */
+    position: fixed; /* Keeps footer at the bottom */
+    bottom: 0;
+    width: 100%; /* Ensures the footer spans full width */
+    background-color: #f9f9f9; /* Optional: gives a background */
+  }
+
+a {
+    text-decoration: none; /* Removes underline */
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Adds underline on hover */
+  }
+
+  

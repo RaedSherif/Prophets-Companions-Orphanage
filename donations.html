@@ -7,7 +7,9 @@
         <meta http-equiv="Content-Language" content="en">
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <title>Donations</title>
-        <link rel='stylesheet' type='css' media='screen' href='addName.css'>
+        <link rel='stylesheet' href='footer.css'>
+        <link rel='stylesheet' href='donations.css'>
+        <link rel='stylesheet' href='header.css'>
         <meta name="author" content="Raed Ahmed">
         <meta name="description" content="Make a difference in the lives of children in need. Your generous donations help provide food, education, shelter, and a brighter future for orphans.">
         <meta name="keywords" content="Orphanage, Support Orphans, Donate to Orphanage, Volunteer with Orphans, Charity for Orphans">
@@ -18,30 +20,137 @@
         <meta property="og:type" content="website">
     </head>
     <body>
-        <div>
-            <h1>Ways you can donate!</h1>
+        <header>
+            <img src="images/logo.jpg" class="logo" alt="Prophet's Companion Orphanage ">
+            <div class="vertical-divider"></div>
+        
+            <nav>
+            <a href="homePage.html"target="_blank">Homepage</a>
+            <a href="aboutUs.html"target="_blank">About</a>
+            <a href="donations.html"target="_blank">Donations</a>
+            <a href="activites.html"target="_blank">Activites</a>
+            <a href="contributors.html"target="_blank">Contributers</a>
+            <a href="volunteering.html"target="_blank">Volunteering</a>
+                
+                
+            </nav>
+            <div class="vertical-divider2"></div>
+            <p><strong>Prophet's Companion Orphanage - A place of care, a path to a <br>better tomorrow</strong></p>
+        </header>
 
-            <p><strong>Find below all the ways you can donate to our cause!</strong></p>
+        <main>
+            <section class="hero">
+              <h1>Make a Difference: Donate to Our Orphanage</h1>
+              <p>Your generous support helps provide food, education, and a brighter future for the children at our orphanage.</p>
+              <a href="#donate-form" class="cta-button">Donate Now</a>
+            </section>
+          
+            <section class="about">
+              <h2>Why Your Donation Matters</h2>
+              <p>Our mission is to provide a safe and nurturing environment for children in need. Your donation ensures they receive the care, education, and support they deserve.</p>
+            </section>
+          
+            <section class="impact">
+              <h2>How Your Donation Helps</h2>
+              <ul>
+                <li>Provides meals and daily essentials</li>
+                <li>Supports educational programs and supplies</li>
+                <li>Fosters emotional well-being through activities and counseling</li>
+              </ul>
+            </section>
+          
+            <section class="donation-options">
+              <h2>Donation Options</h2>
+              <div class="donation-option">
+                <h3>One-Time Donation</h3>
+                <p>Make a single contribution of any amount.</p>
+                <a href="#donate-form" class="cta-button">Donate Now</a>
+              </div>
+              <div class="donation-option">
+                <h3>Monthly Donation</h3>
+                <p>Support us every month with a recurring donation.</p>
+                <a href="#donate-form" class="cta-button">Become a Monthly Donor</a>
+              </div>
+            </section>
+          
+            <section class="donate-form" id="donate-form">
+              <h2>Donate Now</h2>
+              <form action="/submit-donation" method="post">
+                <label for="donation-amount">Donation Amount:</label>
+                <input type="number" id="donation-amount" name="amount" required>
+          
+                <label for="donation-frequency">Donation Frequency:</label>
+                <select id="donation-frequency" name="frequency">
+                  <option value="one-time">One-Time</option>
+                  <option value="monthly">Monthly</option>
+                </select>
+          
+                <label for="donor-name">Your Name:</label>
+                <input type="text" id="donor-name" name="name" required>
+          
+                <button type="submit" class="cta-button">Donate</button>
+              </form>
+            </section>
+          
+            <section class="thank-you">
+              <h2>Thank You for Your Support!</h2>
+              <p>Your contribution makes a lasting impact on the lives of children in need. We couldn’t do this without you.</p>
+            </section>
+        </main>          
 
-            <table>
-                <tr>
-                    <th></th>
-                </tr>
-            </table>
+        <hr>
 
+        <footer>
+            <h1>Contact Information</h1>
+            <table  width="100%">
+            <tr align="center">
+                <th>About Us</th>
+                <th><u>Contact Prophet's Companion Orphanage </u></th>
+                <th>Working Hours</th>
+                <th>Additionl Options</th>
+            </tr>
+            <tr>
+                <td align="center">
+                    <h4>Prophet's Companion Orphanage provide not only <br>shelter but also happiness, love, and <br>a life that evey child deserve</h4>
+                    <a href="AboutUs.html">Learn More</a>
+                </td>
+                <td align="center"><br><br>
+                    <address> 6th of October - Giza - Fourth District, third neighborhood,<br> behind Royal International School,<br> 6th of October, Giza Governorate, Egypt</address><br><br>
+                    Call Us!:<br>
+                    +201148886000<br>+201148883000<br>+201148882000
+                    <br><br>
+                    Germinhesin@gmail.com
+                </td>
+                <td align="center">
+                    Monday
+                    10:00 AM - 10:00 PM<br>
+                    Tuesday
+                    10:00 AM - 10:00 PM<br>
+                    Wednesday
+                    10:00 AM - 10:00 PM<br>
+                    Thursday
+                    10:00 AM - 10:00 PM<br>
+                    Friday
+                    1:00 PM - 6:00 PM<br>
+                    Saturday
+                    10:00 AM - 10:00 PM<br>
+                    Sunday
+                    10:00 AM - 10:00 PM<br>
+                </td>
+                <td align="center">
+                    <a href="news-letter-form.html">Stay connected with us—subscribe to our newsletter for updates, events, and ways to support our mission!</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="icons" colspan="3" >
+                    <a href="https://www.facebook.com/login.php/" ><img src="images/facebookicon.png"width="28px" height="20px"></a>
 
-            
-        </div>
-
-        <div>
-            <form method="get">
-                <table>
-                    <caption>""</caption>
-                </table>
-
-
-
-            </form>
-        </div>
+                    <a href="https://x.com/i/flow/login"><img src="images/Xicon.png" width="20px" height="20px"></a>
+                </td>
+            </tr>
+        </table>
+        <hr>
+        &copy; <i>all rights reserved</i>
+        </footer>
     </body>
 </html>
