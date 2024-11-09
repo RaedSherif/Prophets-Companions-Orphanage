@@ -2,7 +2,6 @@ footer {
     text-align: center;
     margin: 0; /* Removes any default margin */
     padding: 10px 0; /* Optional padding for spacing */
-    position: fixed; /* Keeps footer at the bottom */
     bottom: 0;
     width: 100%; /* Ensures the footer spans full width */
     background-color: #f9f9f9; /* Optional: gives a background */
@@ -16,4 +15,51 @@ a {
     text-decoration: underline; /* Adds underline on hover */
   }
 
-  
+
+ /*HEADER & NAVIGATION* CSS/
+.header{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #ff7700a3;
+    float: left;
+}
+
+.logo {
+    width: 140px;
+    height: 140px;
+}
+
+
+.vertical-divider {
+    width: 1px; /* Thin line */
+    height: 60px; /* Adjust height */
+    background-color: #ccc; /* Line color */
+    margin: 0 20px; /* Space around the divider */
+}
+.vertical-divider2 {
+    width: 1px; /* Thin line */
+    height: 60px; /* Adjust height */
+    background-color: #ccc; /* Line color */
+    margin: 0 20px; /* Space around the divider */
+}
+p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    color: rgb(2, 87, 2);
+}
+
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    margin-left: 40px;
+}
+
+nav a:hover{
+    border-bottom: green solid;
+}
+.second{
+    border: 5px green solid;
+}
