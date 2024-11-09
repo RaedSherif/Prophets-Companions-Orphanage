@@ -1,17 +1,4 @@
 .contributors-logo-grid {
-  display: grid;
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(150px, 1fr)
-  ); /* Adjust min-width as needed */
-  gap: 20px; /* Space between items */
-}
-
-.contributors-logo-item {
-  text-align: center;
-}
-
-.contributors-logo-grid {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -22,40 +9,39 @@
 .header {
   display: flex;
   align-items: center;
-  padding: 20px;
   background-color: #ff7700a3;
 }
 
-.logo {
-  width: 140px;
-  height: 140px;
-}
-
-.vertical-divider {
-  width: 1px; /* Thin line */
-  height: 60px; /* Adjust height */
-  background-color: #ccc; /* Line color */
-  margin: 0 20px; /* Space around the divider */
-}
-.vertical-divider2 {
-  width: 1px; /* Thin line */
-  height: 60px; /* Adjust height */
-  background-color: #ccc; /* Line color */
-  margin: 0 20px; /* Space around the divider */
-}
 p {
   font-family: "Courier New", Courier, monospace;
   font-size: 16px;
   color: rgb(2, 87, 2);
 }
 
-nav a {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 16px;
-  margin-left: 40px;
+
+#Contribute {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; 
+  margin: 0 auto;
+  width: 80%; 
+  max-width: 600px; 
 }
 
-nav a:hover {
-  border-bottom: green solid;
+#Contribute table {
+  width: 100%;
+  border-collapse: collapse; 
+}
+
+#Contribute td {
+  padding: 8px;
+  text-align: left;
+}
+
+#Contribute input[type="submit"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
 }
