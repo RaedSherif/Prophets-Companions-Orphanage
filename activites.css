@@ -46,7 +46,37 @@ p {
   margin: 15px;
   border-radius: 8px;
 }
+
 .icons img {
   width: 28px;
   height: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #ff7700a3;
+}
+
+
+.logo {
+    width: 140px;
+    height: 140px;
+}
+
+
+.vertical-divider {
+    width: 1px; 
+    height: 60px; 
+    background-color: #ccc; 
+    margin: 0 20px; 
+}
+
+
+.vertical-divider2 {
+    width: 1px; 
+    height: 60px; 
+    background-color: #ccc; 
+    margin: 0 20px; 
 }
