@@ -43,7 +43,7 @@
             <section class="hero">
               <h1>Make a Difference: Donate to Our Orphanage</h1>
               <p>Your generous support helps provide food, education, and a brighter future for the children at our orphanage.</p>
-              <img src="images/donate.jpeg"><br>
+              <img src="images/donate.jpeg"><br><br>
               <a href="#donate-form" class="cta-button">Donate Now</a>
             </section>
           
@@ -54,11 +54,13 @@
           
             <section class="impact">
               <h2>How Your Donation Helps</h2>
-              <ul>
-                <li>Provides meals and daily essentials</li>
-                <li>Supports educational programs and supplies</li>
-                <li>Fosters emotional well-being through activities and counseling</li>
-              </ul>
+              <p>
+                
+                Provides meals and daily essentials<br>
+                Supports educational programs and supplies<br>
+                Fosters emotional well-being through activities and counseling
+              
+              </p>
             </section>
           
             <section class="donation-options">
@@ -78,30 +80,34 @@
             <section class="donate-form" id="donate-form">
               <h2>Donate Now</h2>
               <img src="images/kid_study.jpeg">
-              <form action="thanks.html" method="post">
-                <label for="donation-amount">Donation Amount:</label>
-                <input type="number" id="donation-amount" name="amount" required>
-          
-                <label for="donation-frequency">Donation Frequency:</label>
-                <select id="donation-frequency" name="frequency">
-                  <option value="one-time">One-Time</option>
-                  <option value="monthly">Monthly</option>
-                </select>
-          
-                <label for="donor-name">Your Name:</label>
-                <input type="text" id="donor-name" name="name" required>
-          
-                <button type="submit" class="cta-button">Donate</button>
+              <form action="thanks.html" method="get">
+                  <div>
+                      <label for="donation-amount">Donation Amount:</label><br>
+                      <input type="number" id="donation-amount" name="amount" required><br>
+                  </div>
+                  <div>
+                      <label for="donation-frequency">Donation Frequency:</label><br>
+                      <select id="donation-frequency" name="frequency">
+                          <option value="one-time">One-Time</option>
+                          <option value="monthly">Monthly</option>
+                      </select><br>
+                  </div>
+                  <div>
+                      <label for="donor-name">Your Name:</label><br>
+                      <input type="text" id="donor-name" name="name" required><br>
+                  </div>
+                  <div style="text-align: center;">
+                      <button type="submit" class="cta-button">Donate</button>
+                  </div>
               </form>
-            </section>
+          </section>
+          
           
             <section class="thank-you">
               <h2>Thank You for Your Support!</h2>
               <p>Your contribution makes a lasting impact on the lives of children in need. We couldn’t do this without you.</p>
             </section>
         </main>          
-
-        <hr>
         <footer>
 
           <hr>
@@ -151,8 +157,8 @@
             <td class="icons"><a href="https://www.facebook.com/login.php/" ><img src="images/facebookicon.png"width="28px" height="20px"></a>
             <a href="https://x.com/i/flow/login"><img src="images/Xicon.png" width="20px" height="20px"></a></td>
         </tr>
-    </table>
-</div>
+        </table>
+        </div>
         </footer>
     </body>
 </html>
