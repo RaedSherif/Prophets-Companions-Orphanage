@@ -16,13 +16,14 @@ a {
   }
 
 
- /*HEADER & NAVIGATION* CSS/
-.header{
+/* HEADER & NAVIGATION CSS */
+.header {
     display: flex;
     align-items: center;
+    justify-content: space-between; /* Space items evenly within header */
     padding: 20px;
-    background-color: #ff7700a3;
-    float: left;
+    background-color: #ff7700a3; /* Adjust color for accessibility if needed */
+    width: 100%; /* Full width */
 }
 
 .logo {
@@ -30,20 +31,22 @@ a {
     height: 140px;
 }
 
-
-.vertical-divider {
+.vertical-divider{
     width: 1px; /* Thin line */
     height: 60px; /* Adjust height */
     background-color: #ccc; /* Line color */
     margin: 0 20px; /* Space around the divider */
-}
+
+} 
 .vertical-divider2 {
     width: 1px; /* Thin line */
     height: 60px; /* Adjust height */
     background-color: #ccc; /* Line color */
     margin: 0 20px; /* Space around the divider */
 }
-p{
+
+
+.p1{
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
     color: rgb(2, 87, 2);
@@ -62,4 +65,7 @@ nav a:hover{
 }
 .second{
     border: 5px green solid;
+}
+.icons{
+    float: left;
 }
