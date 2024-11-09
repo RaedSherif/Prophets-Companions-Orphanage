@@ -52,3 +52,7 @@ p {
     margin: 15px;
     border-radius: 8px;
 }
+.icons img {
+    width: 28px;
+    height: 20px;
+}

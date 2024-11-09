@@ -53,3 +53,7 @@ p {
 .apply-btn:hover {
     background-color: #1e8449;
 }
+.icons img {
+    width: 20px;
+    height: 20px;
+}
