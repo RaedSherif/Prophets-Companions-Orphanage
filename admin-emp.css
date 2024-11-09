@@ -16,3 +16,6 @@ textarea{
     max-width: 98.8%;
     max-height:300px ;
 }
+#email{
+    width: auto;
+}
