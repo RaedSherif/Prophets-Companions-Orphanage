@@ -1,71 +1,67 @@
 footer {
-    text-align: center;
-    margin: 0; /* Removes any default margin */
-    padding: 10px 0; /* Optional padding for spacing */
-    bottom: 0;
-    width: 100%; /* Ensures the footer spans full width */
-    background-color: #f9f9f9; /* Optional: gives a background */
-  }
+  text-align: center;
+  margin: 0; /* Removes any default margin */
+  padding: 10px 0; /* Optional padding for spacing */
+  bottom: 0;
+  width: 100%; /* Ensures the footer spans full width */
+  background-color: #f9f9f9; /* Optional: gives a background */
+}
 
 a {
-    text-decoration: none; /* Removes underline */
-  }
-  
-  a:hover {
-    text-decoration: underline; /* Adds underline on hover */
-  }
+  text-decoration: none; /* Removes underline */
+}
 
+a:hover {
+  text-decoration: underline; /* Adds underline on hover */
+}
 
 /* HEADER & NAVIGATION CSS */
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Space items evenly within header */
-    padding: 20px;
-    background-color: #ff7700a3; /* Adjust color for accessibility if needed */
-    width: 100%; /* Full width */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space items evenly within header */
+  padding: 20px;
+  background-color: #ff7700a3; /* Adjust color for accessibility if needed */
+  width: 100%; /* Full width */
 }
 
 .logo {
-    width: 140px;
-    height: 140px;
+  width: 140px;
+  height: 140px;
 }
 
-.vertical-divider{
-    width: 1px; /* Thin line */
-    height: 60px; /* Adjust height */
-    background-color: #ccc; /* Line color */
-    margin: 0 20px; /* Space around the divider */
-
-} 
+.vertical-divider {
+  width: 1px; /* Thin line */
+  height: 60px; /* Adjust height */
+  background-color: #ccc; /* Line color */
+  margin: 0 20px; /* Space around the divider */
+}
 .vertical-divider2 {
-    width: 1px; /* Thin line */
-    height: 60px; /* Adjust height */
-    background-color: #ccc; /* Line color */
-    margin: 0 20px; /* Space around the divider */
+  width: 1px; /* Thin line */
+  height: 60px; /* Adjust height */
+  background-color: #ccc; /* Line color */
+  margin: 0 20px; /* Space around the divider */
 }
 
-
-.p1{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 16px;
-    color: rgb(2, 87, 2);
+.p1 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  color: rgb(2, 87, 2);
 }
-
 
 nav a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 16px;
-    margin-left: 40px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  margin-left: 40px;
 }
 
-nav a:hover{
-    border-bottom: green solid;
+nav a:hover {
+  border-bottom: green solid;
 }
-.second{
-    border: 5px green solid;
+.second {
+  border: 5px green solid;
 }
-.icons{
-    float: left;
+.icons {
+  float: left;
 }

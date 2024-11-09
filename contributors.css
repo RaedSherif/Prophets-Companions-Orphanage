@@ -1,61 +1,61 @@
 .contributors-logo-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust min-width as needed */
-    gap: 20px; /* Space between items */
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(150px, 1fr)
+  ); /* Adjust min-width as needed */
+  gap: 20px; /* Space between items */
 }
 
 .contributors-logo-item {
-    text-align: center;
+  text-align: center;
 }
 
-.contributors-logo-grid{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 400px;
-  }
-
+.contributors-logo-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 400px;
+}
 
 .header {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    background-color: #ff7700a3;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #ff7700a3;
 }
 
 .logo {
-    width: 140px;
-    height: 140px;
+  width: 140px;
+  height: 140px;
 }
-
 
 .vertical-divider {
-    width: 1px; /* Thin line */
-    height: 60px; /* Adjust height */
-    background-color: #ccc; /* Line color */
-    margin: 0 20px; /* Space around the divider */
+  width: 1px; /* Thin line */
+  height: 60px; /* Adjust height */
+  background-color: #ccc; /* Line color */
+  margin: 0 20px; /* Space around the divider */
 }
 .vertical-divider2 {
-    width: 1px; /* Thin line */
-    height: 60px; /* Adjust height */
-    background-color: #ccc; /* Line color */
-    margin: 0 20px; /* Space around the divider */
+  width: 1px; /* Thin line */
+  height: 60px; /* Adjust height */
+  background-color: #ccc; /* Line color */
+  margin: 0 20px; /* Space around the divider */
 }
-p{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 16px;
-    color: rgb(2, 87, 2);
+p {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  color: rgb(2, 87, 2);
 }
-
 
 nav a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 16px;
-    margin-left: 40px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  margin-left: 40px;
 }
 
-nav a:hover{
-    border-bottom: green solid;
+nav a:hover {
+  border-bottom: green solid;
 }
