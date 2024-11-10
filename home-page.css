@@ -14,13 +14,13 @@
   width: 1px; /* Thin line */
   height: 60px; /* Adjust height */
   background-color: #ccc; /* Line color */
-  margin: 0 20px; /* Space around the divider */
+  margin: 20px; /* Space around the divider */
 }
 .vertical-divider2 {
   width: 1px; /* Thin line */
   height: 60px; /* Adjust height */
   background-color: #ccc; /* Line color */
-  margin: 0 20px; /* Space around the divider */
+  margin: 20px; /* Space around the divider */
 }
 p {
   font-family: "Courier New", Courier, monospace;
