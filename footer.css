@@ -1,28 +1,28 @@
 footer {
   text-align: center;
-  margin: 0; /* Removes any default margin */
-  padding: 10px 0; /* Optional padding for spacing */
+  margin: 0; 
+  padding: 10px 0; 
   bottom: 0;
-  width: 100%; /* Ensures the footer spans full width */
-  background-color: #f9f9f9; /* Optional: gives a background */
+  width: 100%; 
+  background-color: #f9f9f9; 
 }
 
 a {
-  text-decoration: none; /* Removes underline */
+  text-decoration: none; 
 }
 
 a:hover {
-  text-decoration: underline; /* Adds underline on hover */
+  text-decoration: underline; 
 }
 
-/* HEADER & NAVIGATION CSS */
+
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Space items evenly within header */
+  justify-content: space-between;
   padding: 20px;
-  background-color: #ff7700a3; /* Adjust color for accessibility if needed */
-  width: 100%; /* Full width */
+  background-color: #ff7700a3; 
+  width: 100%; 
 }
 
 .logo {
@@ -31,16 +31,16 @@ a:hover {
 }
 
 .vertical-divider {
-  width: 1px; /* Thin line */
-  height: 60px; /* Adjust height */
-  background-color: #ccc; /* Line color */
-  margin: 0 20px; /* Space around the divider */
+  width: 1px; 
+  height: 60px; 
+  background-color: #ccc; 
+  margin: 0 20px; 
 }
 .vertical-divider2 {
-  width: 1px; /* Thin line */
-  height: 60px; /* Adjust height */
-  background-color: #ccc; /* Line color */
-  margin: 0 20px; /* Space around the divider */
+  width: 1px; 
+  height: 60px; 
+  background-color: #ccc; 
+  margin: 0 20px; 
 }
 
 .p1 {

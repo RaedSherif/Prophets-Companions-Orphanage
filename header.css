@@ -11,16 +11,16 @@
 }
 
 .vertical-divider {
-  width: 1px; /* Thin line */
-  height: 60px; /* Adjust height */
-  background-color: #ccc; /* Line color */
-  margin: 0 20px; /* Space around the divider */
+  width: 1px; 
+  height: 60px; 
+  background-color: #ccc;
+  margin:  20px; 
 }
 .vertical-divider2 {
-  width: 1px; /* Thin line */
-  height: 60px; /* Adjust height */
-  background-color: #ccc; /* Line color */
-  margin: 0 20px; /* Space around the divider */
+  width: 1px; 
+  height: 60px; 
+  background-color: #ccc; 
+  margin:  20px; 
 }
 p {
   font-family: "Courier New", Courier, monospace;
