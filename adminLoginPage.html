@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>login Or Register</title>
+        <link rel="stylesheet" type="text/css" href="adminLoginPagestyle.css">
+    </head>
+    <body>
+        <div id="container" align="center">
+            <div id="right">
+                <h1 id="formHeader"> Login form </h1>
+                <hr>
+                <form method="post" onsubmit="return validate_form ( );">
+                    <label >Username</label>
+                    
+                    <input type="text" name="username" id="username">
+                    <label >Password</label>
+                    
+                    <input type="password" name="password" id="password">
+                    
+                    <button type="submit" name="login" value="Login"> Login </button>
+            </div>
+        </div>
+        <script src="adminLogin.js"></script>
+    </body>
+</html>
