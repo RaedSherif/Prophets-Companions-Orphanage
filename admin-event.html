@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dar Rofkaa Al Nabi | Orphanage</title>
+    <link rel="stylesheet" href="home-page.css" />
+    <link rel="icon" href="images/logo.png" />
+    <script src="admin-events.js"></script>
+  </head>
+  <body id="container">
+    <div class="header">
+      <img src="images/logo.jpg" class="logo" />
+      <div class="vertical-divider"></div>
+
+      <nav>
+        <a href="admin-home-page.html">Dashboard</a>
+        <a href="admin-children-management.html">Children Records</a>
+        <a href="admin-list.html">Financial Mangment</a>
+        <a href="admin-event.html">Events</a>
+      </nav>
+      <div class="vertical-divider2"></div>
+      <p>
+        <strong
+          >Prophet's Companion Orphanage - A place of care, a path to a
+          <br />better tomorrow</strong>
+      </div>
+          <br>
+          <br>
+          <br>
+          <br>
+    <table border="1" width="80%" id="eventTable">
+      <thead>
+        <tr>
+          <th><strong>Event</strong></th>
+          <th><strong>Date</strong></th>
+          <th><strong>Remove</strong></th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Static Rows (Added in the HTML file) -->
+        <tr>
+          <td>Annual Charity Gala</td>
+          <td>1/5/2026</td>
+          <td><button type="button" onclick="removeEvent(this, 'Annual Charity Gala', '1/5/2026')">Remove</button></td>
+        </tr>
+        <tr>
+          <td>Toy Drive</td>
+          <td>1/30/2025</td>
+          <td><button type="button" onclick="removeEvent(this, 'Toy Drive', '1/30/2025')">Remove</button></td>
+        </tr>
+        <tr>
+          <td>Volunteer Day</td>
+          <td>2/29/2025</td>
+          <td><button type="button" onclick="removeEvent(this, 'Volunteer Day', '2/29/2025')">Remove</button></td>
+        </tr>
+        <tr>
+          <td>Back-to-School Fundraiser</td>
+          <td>3/29/2025</td>
+          <td><button type="button" onclick="removeEvent(this, 'Back-to-School Fundraiser', '3/29/2025')">Remove</button></td>
+        </tr>
+        <tr>
+          <td>Cooking for a Cause</td>
+          <td>4/3/2025</td>
+          <td><button type="button" onclick="removeEvent(this, 'Cooking for a Cause', '4/3/2025')">Remove</button></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <button type="button" onclick="addRow()">Add Event</button>
+
+    <form>
+      <h3>Report an Issue</h3>
+      <label for="problem-type"
+        >Select the type of problem you encountered:</label
+      >
+      <select id="problem-type" name="problem_type" required>
+        <option value="technical">
+          Technical Issue (Broken links, errors, etc.)
+        </option>
+        <option value="design">
+          Design/Usability Issues (Difficult navigation, readability, etc.)
+        </option>
+        <option value="functionality">
+          Functionality Issues (Forms, buttons not working, etc.)
+        </option>
+        <option value="content">
+          Content Issues (Typos, missing information, etc.)
+        </option>
+        <option value="security">
+          Security Issues (Phishing, account issues, etc.)
+        </option>
+        <option value="performance">
+          Performance Issues (Slow loading, lag, etc.)
+        </option>
+        <option value="accessibility">
+          Accessibility Issues (Screen reader issues, font size, etc.)
+        </option>
+        <option value="other">Other (Please specify below)</option>
+      </select>
+
+      <br /><br />
+
+      <label for="issue-description">Describe the issue:</label><br />
+      <textarea name="description" rows="5" cols="40" required></textarea>
+
+      <br /><br />
+
+      <label for="contact-email">Your Email:</label><br />
+      <input
+        type="email"
+        id="contact-email"
+        name="contact_email"
+        placeholder="Your email address"
+      />
+
+      <br /><br />
+
+      <button
+        type="button"
+        onclick="alert('Your Report have been Sent, rest assured')"
+      >
+        Send
+      </button>
+  </body>
+</html>

@@ -4,8 +4,8 @@ function validate_form() {
         const validPassword = "admin";
     
         // Get user input
-        const username = document.getElementById("username").value.trim();
-        const password = document.getElementById("password").value.trim();
+        let username = document.getElementById("username").value.trim();
+        let password = document.getElementById("password").value.trim();
     
         // Check if the username and password are correct
         if (username === validUsername && password === validPassword) {

@@ -5,6 +5,7 @@
     <title>Dar Rofkaa Al Nabi | Orphanage</title>
     <link rel="stylesheet" href="home-page.css">
     <link rel="icon" href="images/logo.png"> 
+    <script src="admin-children.js"></script>
 </head>
 <body id="container">
     <div class="header">
@@ -16,7 +17,7 @@
         <a href="admin-home-page.html">Dashboard</a>
         <a href="admin-children-management.html">Children Records</a>
         <a href="admin-list.html">Financial Mangment</a>
-        <a href="admin-events.html">Events</a>
+        <a href="admin-event.html">Events</a>
 </nav>
 <div class="vertical-divider2"></div>
 <p><strong>Prophet's Companion Orphanage - A place of care, a path to a <br>better tomorrow</strong></p>
@@ -25,13 +26,14 @@
     <br>
 </head>
 <body>
-    <table border="1" width="100%">
-            <tr>
+    <table border="1" width="100%" id="childrenTable">
+            <thead>
                 <td><strong>Children Name</strong></td>
                 <td><strong>Children Age</strong></td>
                 <td><strong>Children Gender</strong></td>
                 <td><strong>Time They Came In</strong></td>
-            </tr>
+            </thead>
+            <tbody>
             <tr>
                 <td>John Doe</td>
                 <td>10</td>
@@ -272,7 +274,10 @@
                 <td>Male</td>
                 <td>11/30/2024</td>
             </tr>
+            </tbody>
     </table>
+    <br>
+        <div align="center"><button type="button" onclick="addRow()">Add</button></div>
     <hr>
     <form>
     <h3>Report an Issue</h3>
