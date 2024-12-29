@@ -1,3 +1,12 @@
+function validatephonenumber()
+{
+    input.value = input.value.replace(/\D/g, '');
+    if (input.value.length > 11)
+        { 
+            input.value = input.value.slice(0, 11); 
+        }
+}
+
 function f1()
 {
     // alert('hi');
@@ -19,16 +28,18 @@ function f1()
         {
          document.getElementById("myerror").innerHTML='Please enter your email, do not leave any filed empty';
         }
-        else if (t=="" || t==null)
+        else if (t.length !==11 || t=='' || t==null)
             {
-             document.getElementById("myerror").innerHTML='Please enter your phone number, do not leave any filed empty';
+             document.getElementById("myerror").innerHTML='Please enter your phone number, and be sure that it is all numbers and exactly 11 digits';
             }
             else if (r=="" || r==null || r=="What information would you like to see added to our About Us page?")
                 {
                  document.getElementById("myerror").innerHTML='Please enter your suggestion, do not leave any filed empty';
                 }
     else{
+        document.getElementById("myerror").innerHTML='';
         alert('thanks for filling the form')
+
     }
 
 }
