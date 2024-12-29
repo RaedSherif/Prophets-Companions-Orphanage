@@ -1,6 +1,6 @@
 function f1()
 {
-    // alert('hi');
+    //alert('hi');
    let x=document.getElementById("firstname").value;
    let y=document.getElementById('lastname').value;
    let z=document.getElementById('email').value;
@@ -23,13 +23,13 @@ function f1()
             {
              document.getElementById("myerror").innerHTML='Please enter your phone number, and be sure that it is all numbers and exactly 11 digits';
             }
-            else if (r=="" || r==null || r=="What information would you like to see added to our About Us page?")
+            else if (r=="" || r==null || r=='What message would you like to reach our team ?')
                 {
                  document.getElementById("myerror").innerHTML='Please enter your suggestion, do not leave any filed empty';
                 }
     else{
         document.getElementById("myerror").innerHTML='';
-        alert('Your suggestion is recived, thanks for filling the form')
+        alert('Your message is recived, thanks for sending your message')
 
     }
 
