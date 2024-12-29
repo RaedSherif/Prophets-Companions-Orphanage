@@ -1,12 +1,3 @@
-function validatephonenumber()
-{
-    input.value = input.value.replace(/\D/g, '');
-    if (input.value.length > 11)
-        { 
-            input.value = input.value.slice(0, 11); 
-        }
-}
-
 function f1()
 {
     // alert('hi');
