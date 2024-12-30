@@ -2,20 +2,23 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="mystylesheet1.css" />
+    <script src="location-form.js"></script>
     <title>location form</title>
   </head>
   <body>
     <h1 align="center">For any inquiries, please fill this form</h1>
     <br /><br />
-    <form action="inquiry.html">
+    <div align="center" id="myerror"></div>
+    <br>
+    <form>
       <table border="1" align="center" class="table2">
         <tr>
           <td>First name:</td>
-          <td><input type="text" name="Firstname" /></td>
+          <td><input type="text" name="Firstname" id="firstname"></td>
         </tr>
         <tr>
           <td>Last name:</td>
-          <td><input type="text" name="Lastname" /></td>
+          <td><input type="text" name="Lastname" id="lastname"></td>
         </tr>
         <tr>
           <td>Contact Information:</td>
@@ -23,11 +26,11 @@
             <table>
               <tr>
                 <td>Email:</td>
-                <td><input type="text" name="Email" /></td>
+                <td><input type="text" name="Email" id="email"></td>
               </tr>
               <tr>
                 <td>Phone number:</td>
-                <td><input type="text" name="Phonenumber" /></td>
+                <td><input type="text" name="Phonenumber" id="phonenumber"></td>
               </tr>
             </table>
           </td>
@@ -49,12 +52,11 @@
         </tr>
         <tr>
           <td>Inquiries:</td>
-          <td><textarea name="Suggestion" rows="10" col="30"></textarea></td>
+          <td><textarea name="Suggestion" rows="10" col="30" id="text"></textarea></td>
         </tr>
         <tr>
           <td colspan="2">
-            <input type="submit" value="Submit Form" />
-          </td>
+            <input type="button" value="Submit Form" onclick="f1()"></td>
         </tr>
         <tr>
           <td colspan="2"><input type="reset" value="Clear Form" /></td>
