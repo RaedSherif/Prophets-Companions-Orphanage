@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" href="mystylesheet1.css" />
     <title>Support our mission</title>
+    <script src="mission-form.js"></script>
   </head>
   <body>
     <h1 align="center">Support our mission</h1>
@@ -14,16 +15,18 @@
       serve. Please fill out the form below to get involved or to receive more
       information on ways to support our mission.
     </div>
-
-    <form action="mission-thanks.html">
+    <br>
+    <div align="center" id="myerror"></div>
+    <br>
+    <form>
       <table border="1" align="center" class="table2">
         <tr>
           <td>First name:</td>
-          <td><input type="text" name="Firstname" /></td>
+          <td><input type="text" name="Firstname" id="firstname"></td>
         </tr>
         <tr>
           <td>Last name:</td>
-          <td><input type="text" name="Lastname" /></td>
+          <td><input type="text" name="Lastname" id="lastname"></td>
         </tr>
         <tr>
           <td>Contact Information:</td>
@@ -31,11 +34,11 @@
             <table>
               <tr>
                 <td>Email:</td>
-                <td><input type="text" name="Email" /></td>
+                <td><input type="text" name="Email" id="email"></td>
               </tr>
               <tr>
                 <td>Phone number:</td>
-                <td><input type="text" name="Phonenumber" /></td>
+                <td><input type="text" name="Phonenumber" id="phonenumber"></td>
               </tr>
             </table>
           </td>
@@ -93,14 +96,12 @@
         <tr>
           <td>Message or Questions:</td>
           <td>
-            <textarea name="Message" rows="10" col="30">
-"Please share any additional details, questions, or suggestions for how you’d like to support our mission."</textarea
-            >
+            <textarea name="Message" rows="10" col="30" id="text">Please share any additional details, questions, or suggestions for how you’d like to support our mission.</textarea>
           </td>
         </tr>
         <tr>
           <td colspan="2">
-            <input type="submit" value="Submit Form" />
+            <input type="button" value="Submit Form" onclick="f1()">
           </td>
         </tr>
         <tr>
