@@ -10,7 +10,7 @@ function validate_form() {
         // Check if the username and password are correct
         if (username === validUsername && password === validPassword) {
             window.location.href = "admin-home-page.html"; // Redirect to admin page
-            return false; // Prevent the form from submitting
+            return false;
         } 
         else if (username === "" && password === "")
             alert("Please fill the blank section")
@@ -20,7 +20,7 @@ function validate_form() {
             alert("Please fill the blank section")
         else {
             alert("You are not an admin");
-            return false; // Prevent form submission
+            return false;
         }
     }
     
