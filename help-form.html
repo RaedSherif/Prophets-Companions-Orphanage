@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="mystylesheet1.css" />
+    <script src="help-form.js"></script>
     <title>our help list</title>
   </head>
   <body>
@@ -14,16 +15,18 @@
       help. Our team will reach out with further information on how you can make
       a difference in the lives of our children.
     </div>
-
-    <form action="help-thanks.html">
+    <br>
+    <div id="myerror" align="center"></div>
+    <br>
+    <form>
       <table border="1" align="center" class="table2">
         <tr>
           <td>First name:</td>
-          <td><input type="text" name="Firstname" /></td>
+          <td><input type="text" name="Firstname" id="firstname"></td>
         </tr>
         <tr>
           <td>Last name:</td>
-          <td><input type="text" name="Lastname" /></td>
+          <td><input type="text" name="Lastname" id="lastname"></td>
         </tr>
         <tr>
           <td>Contact Information:</td>
@@ -31,11 +34,11 @@
             <table>
               <tr>
                 <td>Email:</td>
-                <td><input type="text" name="Email" /></td>
+                <td><input type="text" name="Email" id="email"></td>
               </tr>
               <tr>
                 <td>Phone number:</td>
-                <td><input type="text" name="Phonenumber" /></td>
+                <td><input type="text" name="Phonenumber" id="phonenumber"></td>
               </tr>
             </table>
           </td>
@@ -121,14 +124,12 @@
         <tr>
           <td>Message or Additional Information</td>
           <td>
-            <textarea name="Message" rows="10" col="30">
-"If you have any questions, specific requests, or details you’d like to share, please enter them here."</textarea
-            >
+            <textarea name="Message" rows="10" col="30" id="text">If you have any questions, specific requests, or details you’d like to share, please enter them here.</textarea>
           </td>
         </tr>
         <tr>
           <td colspan="2">
-            <input type="submit" value="Submit Form" />
+            <input type="button" value="Submit Form" onclick="f1()">
           </td>
         </tr>
         <tr>
