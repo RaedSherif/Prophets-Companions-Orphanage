@@ -1,88 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <link rel="stylesheet" href="volunteering.css" />
     <title>Becoming a Caretaker</title>
-  </head>
-  <body>
-    <header>
-      <h1>Join Us as a Caretaker</h1>
-      <p>
-        <br /><br /><br /><br /><br />Provide a nurturing and safe environment
-        for children, helping them feel valued and supported in all aspects of
-        their lives.
-      </p>
-      <a href="volunteering-index.html">Return</a>
-    </header>
+</head>
+<body>
+<header>
+    <h1>Join Us as a Caretaker</h1>
+    <p>
+        Provide a nurturing and safe environment for children, helping them feel valued and supported in all aspects of their lives.
+    </p>
+    <a href="volunteering-index.html">Return</a>
+</header>
 
-    <section>
-      <div class="container">
+<section>
+    <div class="container">
         <h2>About the Caretaker Role</h2>
         <p>
-          Caretakers play a crucial role in the daily lives of children,
-          ensuring their physical, emotional, and mental well-being. They assist
-          with routines, provide companionship, and contribute to a positive
-          environment where children can thrive.
+            Caretakers play a crucial role in the daily lives of children, ensuring their physical, emotional, and mental well-being. They assist with routines, provide companionship, and contribute to a positive environment where children can thrive.
         </p>
 
         <div class="requirements">
-          <h2>Qualifications and Requirements</h2>
-          <ul>
-            <li>Compassionate and patient attitude toward children</li>
-            <li>
-              Experience in caregiving or working with children (preferred)
-            </li>
-            <li>Strong communication and interpersonal skills</li>
-            <li>Basic knowledge of child safety and first aid</li>
-            <li>
-              Ability to engage in physical activities and assist in daily
-              routines
-            </li>
-          </ul>
+            <h2>Qualifications and Requirements</h2>
+            <ul>
+                <li>Compassionate and patient attitude toward children</li>
+                <li>Experience in caregiving or working with children (preferred)</li>
+                <li>Strong communication and interpersonal skills</li>
+                <li>Basic knowledge of child safety and first aid</li>
+                <li>Ability to engage in physical activities and assist in daily routines</li>
+            </ul>
         </div>
 
         <div class="apply">
-          <h2>How to Apply</h2>
-          <p>
-            We welcome individuals with a passion for making a positive impact
-            on children's lives. To apply, please complete the form below or
-            contact us at our email.
-          </p>
-          <p>Form:</p>
+            <h2>How to Apply</h2>
+            <p>
+                We welcome individuals with a passion for making a positive impact on children's lives. To apply, please complete the form below or contact us at our email.
+            </p>
         </div>
     </div>
 </section>
-<form action="thanks.html" method="POST">
+
+<form action="thanks.html" method="POST" onsubmit="return validateForm()">
     <label for="name">Full Name:</label><br>
     <input type="text" id="name" name="name" required><br><br>
 
-      <label for="email">Email:</label><br />
-      <input type="email" id="email" name="email" required /><br /><br />
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
 
-      <label for="phone">Phone Number:</label><br />
-      <input type="tel" id="phone" name="phone" required /><br /><br />
+    <label for="phone">Phone Number:</label><br>
+    <input type="tel" id="phone" name="phone" required><br><br>
 
-      <label for="experience"
-        >Do you have experience volunteering or participating in npo
-        activities?</label
-      ><br />
-      <input
-        type="text"
-        id="experience"
-        name="experience"
-        required
-      /><br /><br />
+    <label for="experience">Do you have experience volunteering or participating in NPO activities?</label><br>
+    <input type="text" id="experience" name="experience" required><br><br>
 
-      <label for="motivation">Why would you like to volunteer with us?</label
-      ><br />
-      <input
-        type="text"
-        id="motivation"
-        name="motivation"
-        required
-      /><br /><br />
+    <label for="motivation">Why would you like to volunteer with us?</label><br>
+    <input type="text" id="motivation" name="motivation" required><br><br>
 
-      <input type="submit" value="Submit Application" />
-    </form>
-  </body>
+    <p id="myerror" style="color: red;"></p>
+
+    <input type="submit" value="Submit Application">
+</form>
+
+<script src="volunteering-page2-validate.js"></script>
+</body>
 </html>
