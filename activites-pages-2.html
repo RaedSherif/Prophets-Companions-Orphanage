@@ -1,83 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="activites.css" />
-    <title>Art Activities</title>
-  </head>
-  <body>
-    <header>
-      <h1>Art Activities</h1>
+<head>
+  <link rel="stylesheet" href="activites.css" />
+  <title>Art Activities</title>
+</head>
+<body>
+  <header>
+    <h1>Art Activities</h1>
+    <p>
+      Inspiring creativity and self-expression through art, helping children explore their unique talents.
+    </p>
+    <a href="activites-index.html">activities</a>
+  </header>
+
+  <section>
+    <div class="container">
+      <h2>About Our Art Program</h2>
       <p>
-        <br /><br /><br /><br /><br />Inspiring creativity and self-expression
-        through art, helping children explore their unique talents.
+        Our art activities provide children with the tools and guidance to explore various forms of artistic expression. From painting to crafting, these activities allow children to tap into their creativity, build confidence, and discover their own artistic voices.
       </p>
-      <a href="activites-index.html">activities</a>
-    </header>
 
-    <section>
-      <div class="container">
-        <h2>About Our Art Program</h2>
+      <div class="requirements">
+        <h2>Benefits of Art Activities</h2>
+        <ul>
+          <li>Encourages creativity and imagination</li>
+          <li>Boosts self-confidence and expression</li>
+          <li>Improves fine motor skills and focus</li>
+          <li>Helps in emotional expression and processing</li>
+          <li>Offers a therapeutic and relaxing outlet</li>
+        </ul>
+      </div>
+
+      <div class="apply">
+        <h2>How to Get Involved</h2>
         <p>
-          Our art activities provide children with the tools and guidance to
-          explore various forms of artistic expression. From painting to
-          crafting, these activities allow children to tap into their
-          creativity, build confidence, and discover their own artistic voices.
+          We welcome volunteers with a passion for art to join us in inspiring the next generation of artists. Whether you’re skilled in painting, sculpture, or any other art form, your guidance can make a huge impact on these young lives.
         </p>
-
-        <div class="requirements">
-          <h2>Benefits of Art Activities</h2>
-          <ul>
-            <li>Encourages creativity and imagination</li>
-            <li>Boosts self-confidence and expression</li>
-            <li>Improves fine motor skills and focus</li>
-            <li>Helps in emotional expression and processing</li>
-            <li>Offers a therapeutic and relaxing outlet</li>
-          </ul>
-        </div>
-
-        <div class="apply">
-          <h2>How to Get Involved</h2>
-          <p>
-            We welcome volunteers with a passion for art to join us in inspiring
-            the next generation of artists. Whether you’re skilled in painting,
-            sculpture, or any other art form, your guidance can make a huge
-            impact on these young lives.
-          </p>
-          <p>Form:</p>
-        </div>
+      </div>
     </div>
-</section>
-<form action="thanks.html" method="POST">
-    <label for="name">Full Name:</label><br>
-    <input type="text" id="name" name="name" required><br><br>
+  </section>
 
-      <label for="email">Email:</label><br />
-      <input type="email" id="email" name="email" required /><br /><br />
+  <form action="thanks.html" method="POST" onsubmit="return validateArtForm()">
+    <label for="art-name">Full Name:</label><br>
+    <input type="text" id="art-name" name="name" required><br><br>
 
-      <label for="phone">Phone Number:</label><br />
-      <input type="tel" id="phone" name="phone" required /><br /><br />
+    <label for="art-email">Email:</label><br>
+    <input type="email" id="art-email" name="email" required><br><br>
 
-      <label for="experience"
-        >Do you have experience volunteering or participating in npo
-        activities?</label
-      ><br />
-      <input
-        type="text"
-        id="experience"
-        name="experience"
-        required
-      /><br /><br />
+    <label for="art-phone">Phone Number:</label><br>
+    <input type="tel" id="art-phone" name="phone" required><br><br>
 
-      <label for="motivation">Why would you like to volunteer with us?</label
-      ><br />
-      <input
-        type="text"
-        id="motivation"
-        name="motivation"
-        required
-      /><br /><br />
+    <label for="art-experience">Do you have experience volunteering or participating in NPO activities?</label><br>
+    <input type="text" id="art-experience" name="experience" required><br><br>
 
-      <input type="submit" value="Submit Application" />
-    </form>
-  </body>
+    <label for="art-motivation">Why would you like to volunteer with us?</label><br>
+    <input type="text" id="art-motivation" name="motivation" required><br><br>
+
+    <!-- Error message placeholder -->
+    <p id="art-error" style="color: red;"></p>
+
+    <input type="submit" value="Submit Application">
+  </form>
+
+  <script src="activites-page-2-validate.js"></script>
+</body>
 </html>

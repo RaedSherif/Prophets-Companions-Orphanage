@@ -1,82 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="activites.css" />
-    <title>Board Games</title>
-  </head>
-  <body>
-    <header>
-      <h1>Board Games</h1>
+<head>
+  <link rel="stylesheet" href="activites.css" />
+  <title>Board Games</title>
+</head>
+<body>
+  <header>
+    <h1>Board Games</h1>
+    <p>
+      Encouraging strategic thinking, patience, and social skills through fun,
+      interactive board games.
+      <a href="activites-index.html">activities</a>
+    </p>
+  </header>
+
+  <section>
+    <div class="container">
+      <h2>About Our Board Games Program</h2>
       <p>
-        <br /><br /><br /><br />Encouraging strategic thinking, patience, and
-        social skills through fun, interactive board games.
-        <a href="activites-index.html">activities</a>
+        Our board games activities offer children a chance to learn valuable
+        skills while having fun. Through classic games like chess, checkers,
+        and puzzle games, children develop cognitive abilities, patience, and
+        social skills in a supportive and enjoyable environment.
       </p>
-    </header>
 
-    <section>
-      <div class="container">
-        <h2>About Our Board Games Program</h2>
+      <div class="requirements">
+        <h2>Benefits of Board Games Activities</h2>
+        <ul>
+          <li>Enhances critical thinking and problem-solving skills</li>
+          <li>Teaches patience and turn-taking</li>
+          <li>Encourages healthy social interaction and teamwork</li>
+          <li>Builds resilience and adaptability</li>
+          <li>Provides a structured, screen-free activity</li>
+        </ul>
+      </div>
+
+      <div class="apply">
+        <h2>How to Get Involved</h2>
         <p>
-          Our board games activities offer children a chance to learn valuable
-          skills while having fun. Through classic games like chess, checkers,
-          and puzzle games, children develop cognitive abilities, patience, and
-          social skills in a supportive and enjoyable environment.
+          If you enjoy playing board games and want to make a positive impact,
+          join us! Volunteers help guide children through games, teach
+          strategies, and foster a positive, inclusive gaming environment.
         </p>
-
-        <div class="requirements">
-          <h2>Benefits of Board Games Activities</h2>
-          <ul>
-            <li>Enhances critical thinking and problem-solving skills</li>
-            <li>Teaches patience and turn-taking</li>
-            <li>Encourages healthy social interaction and teamwork</li>
-            <li>Builds resilience and adaptability</li>
-            <li>Provides a structured, screen-free activity</li>
-          </ul>
-        </div>
-
-        <div class="apply">
-          <h2>How to Get Involved</h2>
-          <p>
-            If you enjoy playing board games and want to make a positive impact,
-            join us! Volunteers help guide children through games, teach
-            strategies, and foster a positive, inclusive gaming environment.
-          </p>
-          <p>Form:</p>
-        </div>
+      </div>
     </div>
-</section>
-<form action="thanks.html" method="POST">
-    <label for="name">Full Name:</label><br>
-    <input type="text" id="name" name="name" required><br><br>
+  </section>
 
-      <label for="email">Email:</label><br />
-      <input type="email" id="email" name="email" required /><br /><br />
+  <form action="thanks.html" method="POST" onsubmit="return validateBoardGamesForm()">
+    <label for="boardgame-name">Full Name:</label><br>
+    <input type="text" id="boardgame-name" name="name" required><br><br>
 
-      <label for="phone">Phone Number:</label><br />
-      <input type="tel" id="phone" name="phone" required /><br /><br />
+    <label for="boardgame-email">Email:</label><br>
+    <input type="email" id="boardgame-email" name="email" required><br><br>
 
-      <label for="experience"
-        >Do you have experience volunteering or participating in npo
-        activities?</label
-      ><br />
-      <input
-        type="text"
-        id="experience"
-        name="experience"
-        required
-      /><br /><br />
+    <label for="boardgame-phone">Phone Number:</label><br>
+    <input type="tel" id="boardgame-phone" name="phone" required><br><br>
 
-      <label for="motivation">Why would you like to volunteer with us?</label
-      ><br />
-      <input
-        type="text"
-        id="motivation"
-        name="motivation"
-        required
-      /><br /><br />
+    <label for="boardgame-experience">Do you have experience with board games or NPO activities?</label><br>
+    <input type="text" id="boardgame-experience" name="experience" required><br><br>
 
-      <input type="submit" value="Submit Application" />
-    </form>
-  </body>
+    <label for="boardgame-motivation">Why would you like to volunteer with us?</label><br>
+    <input type="text" id="boardgame-motivation" name="motivation" required><br><br>
+
+    
+    <p id="boardgame-error" style="color: red;"></p>
+
+    <input type="submit" value="Submit Application">
+  </form>
+
+  <script src="activites-page-3-validate.js"></script>
+</body>
 </html>

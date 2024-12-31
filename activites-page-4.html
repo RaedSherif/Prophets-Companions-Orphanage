@@ -1,84 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="activites.css" />
-    <title>Story Time Activities</title>
-  </head>
-  <body>
-    <header>
-      <h1>Story Time Activities</h1>
+<head>
+  <link rel="stylesheet" href="activites.css" />
+  <title>Story Time Activities</title>
+</head>
+<body>
+  <header>
+    <h1>Story Time Activities</h1>
+    <p>
+      Bringing stories to life, fostering imagination, and building a love for
+      reading in children.
+    </p>
+    <a href="activites-index.html">activities</a>
+  </header>
+
+  <section>
+    <div class="container">
+      <h2>About Our Story Time Program</h2>
       <p>
-        Bringing stories to life, fostering imagination, and building a love for
-        reading in children.
+        Our Story Time program captivates young minds with engaging tales,
+        helping children develop language skills, enhance their imaginations,
+        and foster a lifelong love of reading. Each session brings new
+        stories, adventures, and characters that inspire curiosity and
+        creativity.
       </p>
-      <a href="activites-index.html">activities</a>
-    </header>
 
-    <section>
-      <div class="container">
-        <h2>About Our Story Time Program</h2>
+      <div class="requirements">
+        <h2>Benefits of Story Time Activities</h2>
+        <ul>
+          <li>Encourages language development and vocabulary</li>
+          <li>Boosts imagination and creativity</li>
+          <li>Promotes listening and comprehension skills</li>
+          <li>Provides emotional and moral lessons through storytelling</li>
+          <li>Strengthens focus and attention span</li>
+        </ul>
+      </div>
+
+      <div class="apply">
+        <h2>How to Get Involved</h2>
         <p>
-          Our Story Time program captivates young minds with engaging tales,
-          helping children develop language skills, enhance their imaginations,
-          and foster a lifelong love of reading. Each session brings new
-          stories, adventures, and characters that inspire curiosity and
-          creativity.
+          We welcome volunteers who are passionate about storytelling and
+          reading aloud to children. Your voice and presence can make stories
+          come to life, creating memorable experiences that inspire and
+          educate young minds.
         </p>
-
-        <div class="requirements">
-          <h2>Benefits of Story Time Activities</h2>
-          <ul>
-            <li>Encourages language development and vocabulary</li>
-            <li>Boosts imagination and creativity</li>
-            <li>Promotes listening and comprehension skills</li>
-            <li>Provides emotional and moral lessons through storytelling</li>
-            <li>Strengthens focus and attention span</li>
-          </ul>
-        </div>
-
-        <div class="apply">
-          <h2>How to Get Involved</h2>
-          <p>
-            We welcome volunteers who are passionate about storytelling and
-            reading aloud to children. Your voice and presence can make stories
-            come to life, creating memorable experiences that inspire and
-            educate young minds.
-          </p>
-          <p>Form:</p>
-        </div>
+      </div>
     </div>
-</section>
-<form action="thanks.html" method="POST">
-    <label for="name">Full Name:</label><br>
-    <input type="text" id="name" name="name" required><br><br>
+  </section>
 
-      <label for="email">Email:</label><br />
-      <input type="email" id="email" name="email" required /><br /><br />
+  <form action="thanks.html" method="POST" onsubmit="return validateStoryTimeForm()">
+    <label for="story-name">Full Name:</label><br>
+    <input type="text" id="story-name" name="name" required><br><br>
 
-      <label for="phone">Phone Number:</label><br />
-      <input type="tel" id="phone" name="phone" required /><br /><br />
+    <label for="story-email">Email:</label><br>
+    <input type="email" id="story-email" name="email" required><br><br>
 
-      <label for="experience"
-        >Do you have experience volunteering or participating in npo
-        activities?</label
-      ><br />
-      <input
-        type="text"
-        id="experience"
-        name="experience"
-        required
-      /><br /><br />
+    <label for="story-phone">Phone Number:</label><br>
+    <input type="tel" id="story-phone" name="phone" required><br><br>
 
-      <label for="motivation">Why would you like to volunteer with us?</label
-      ><br />
-      <input
-        type="text"
-        id="motivation"
-        name="motivation"
-        required
-      /><br /><br />
+    <label for="story-experience">Do you have experience with storytelling or NPO activities?</label><br>
+    <input type="text" id="story-experience" name="experience" required><br><br>
 
-      <input type="submit" value="Submit Application" />
-    </form>
-  </body>
+    <label for="story-motivation">Why would you like to volunteer with us?</label><br>
+    <input type="text" id="story-motivation" name="motivation" required><br><br>
+
+    
+    <p id="story-error" style="color: red;"></p>
+
+    <input type="submit" value="Submit Application">
+  </form>
+
+  <script src="activites-page-4-validate.js"></script>
+</body>
 </html>
