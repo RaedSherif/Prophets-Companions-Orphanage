@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/logo.png">
     <title>Fill Out Form</title>
+    <script src="reportValidation.js"></script>
     <link rel="stylesheet" href="admin-emp.css">
 </head>
 <body>
@@ -16,7 +17,7 @@
         please state your reason of absence clearly and simple.</h2><br>
         <h5><u>(The manager will reach out to you as soon as he can after you submiting the form)</u></h5>
     <br><br><br><br>
-    <form>
+    <form id="form1">
         <table border="1" align="center">
            <tr>
             <td>First Name</td>
@@ -45,33 +46,35 @@
     <br>
     <br>
     <hr>
-    <form>
-       <h3>Report an Issue</h3>
-       <label for="problem-type">Select the type of problem you encountered:</label>
-       <select>
-           <option value="technical">Technical Issue (Broken links, errors, etc.)</option>
-           <option value="design">Design/Usability Issues (Difficult navigation, readability, etc.)</option>
-           <option value="functionality">Functionality Issues (Forms, buttons not working, etc.)</option>
-           <option value="content">Content Issues (Typos, missing information, etc.)</option>
-           <option value="security">Security Issues (Phishing, account issues, etc.)</option>
-           <option value="performance">Performance Issues (Slow loading, lag, etc.)</option>
-           <option value="accessibility">Accessibility Issues (Screen reader issues, font size, etc.)</option>
-           <option value="other">Other (Please specify below)</option>
-       </select>
-       
-       <br><br>
-   
-       <label for="issue-description">Describe the issue:</label><br>
-       <textarea name="description" rows="5" cols="40" required></textarea>
-       
-       <br><br>
-       
-       <label for="contact-email">Your Email:</label><br>
-       <input type="email" name="contact_email" placeholder="Your email address" id="email">
-       
-       <br><br>
-       
-       <button type="button" onclick="alert('Your Report have been Sent, rest assured')">Send</button>
-   </form>
+    <form onsubmit="return validate()">
+        <h3>Report an Issue</h3>
+    
+        <label for="problem-type">Select the type of problem you encountered:</label>
+        <select id="problem-type" name="problem_type" required>
+            <option value="technical">Technical Issue (Broken links, errors, etc.)</option>
+            <option value="design">Design/Usability Issues (Difficult navigation, readability, etc.)</option>
+            <option value="functionality">Functionality Issues (Forms, buttons not working, etc.)</option>
+            <option value="content">Content Issues (Typos, missing information, etc.)</option>
+            <option value="security">Security Issues (Phishing, account issues, etc.)</option>
+            <option value="performance">Performance Issues (Slow loading, lag, etc.)</option>
+            <option value="accessibility">Accessibility Issues (Screen reader issues, font size, etc.)</option>
+            <option value="other">Other (Please specify below)</option>
+        </select>
+    
+        <br><br>
+    
+        <!-- Fix: Ensure the textarea has a unique ID -->
+        <label for="description">Describe the issue:</label><br>
+        <textarea id="description" rows="5" cols="40"></textarea>
+    
+        <br><br>
+    
+        <label for="contact-email">Your Email:</label><br>
+        <input type="email" id="contact-email" name="contact_email" placeholder="Your email address">
+    
+        <br><br>
+    
+        <button type="submit">Send</button>
+    </form>
 </body>
 </html>

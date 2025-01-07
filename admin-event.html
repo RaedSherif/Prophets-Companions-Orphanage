@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dar Rofkaa Al Nabi | Orphanage</title>
-    <link rel="stylesheet" href="home-page.css" />
-    <link rel="icon" href="images/logo.png" />
+    <link rel="stylesheet" href="home-page.css">
+    <link rel="icon" href="images/logo.png" >
     <script src="admin-events.js"></script>
+    <script src="reportValidation.js"></script>
+
   </head>
   <body id="container">
     <div class="header">
@@ -68,58 +70,35 @@
 
     <button type="button" onclick="addRow()">Add Event</button>
 
-    <form>
+    <form onsubmit="return validate()">
       <h3>Report an Issue</h3>
-      <label for="problem-type"
-        >Select the type of problem you encountered:</label
-      >
+  
+      <label for="problem-type">Select the type of problem you encountered:</label>
       <select id="problem-type" name="problem_type" required>
-        <option value="technical">
-          Technical Issue (Broken links, errors, etc.)
-        </option>
-        <option value="design">
-          Design/Usability Issues (Difficult navigation, readability, etc.)
-        </option>
-        <option value="functionality">
-          Functionality Issues (Forms, buttons not working, etc.)
-        </option>
-        <option value="content">
-          Content Issues (Typos, missing information, etc.)
-        </option>
-        <option value="security">
-          Security Issues (Phishing, account issues, etc.)
-        </option>
-        <option value="performance">
-          Performance Issues (Slow loading, lag, etc.)
-        </option>
-        <option value="accessibility">
-          Accessibility Issues (Screen reader issues, font size, etc.)
-        </option>
-        <option value="other">Other (Please specify below)</option>
+          <option value="technical">Technical Issue (Broken links, errors, etc.)</option>
+          <option value="design">Design/Usability Issues (Difficult navigation, readability, etc.)</option>
+          <option value="functionality">Functionality Issues (Forms, buttons not working, etc.)</option>
+          <option value="content">Content Issues (Typos, missing information, etc.)</option>
+          <option value="security">Security Issues (Phishing, account issues, etc.)</option>
+          <option value="performance">Performance Issues (Slow loading, lag, etc.)</option>
+          <option value="accessibility">Accessibility Issues (Screen reader issues, font size, etc.)</option>
+          <option value="other">Other (Please specify below)</option>
       </select>
-
-      <br /><br />
-
-      <label for="issue-description">Describe the issue:</label><br />
-      <textarea name="description" rows="5" cols="40" required></textarea>
-
-      <br /><br />
-
-      <label for="contact-email">Your Email:</label><br />
-      <input
-        type="email"
-        id="contact-email"
-        name="contact_email"
-        placeholder="Your email address"
-      />
-
-      <br /><br />
-
-      <button
-        type="button"
-        onclick="alert('Your Report have been Sent, rest assured')"
-      >
-        Send
-      </button>
+  
+      <br><br>
+  
+      <!-- Fix: Ensure the textarea has a unique ID -->
+      <label for="description">Describe the issue:</label><br>
+      <textarea id="description" rows="5" cols="40"></textarea>
+  
+      <br><br>
+  
+      <label for="contact-email">Your Email:</label><br>
+      <input type="email" id="contact-email" name="contact_email" placeholder="Your email address">
+  
+      <br><br>
+  
+      <button type="submit">Send</button>
+  </form>
   </body>
 </html>
