@@ -12,7 +12,7 @@ function partner()
       }
 
     
-    if (!name) {
+    if (! name) {
         error.textContent = 'Please enter your full name. Do not leave this field empty.';
         return false;
     }
