@@ -16,6 +16,7 @@
         <meta property="og:title" content="Our Contributors">
         <meta property="og:description" content="Meet the generous supporters and partners who help us make a difference in the lives of children at our orphanage.">
         <meta property="og:type" content="website">
+        <script src="contributors.js"></script>
     </head>
 <body>
     <head></head>
@@ -66,7 +67,7 @@
 <section id="Contribute">
     <h2>Partner With Us!</h2>
     <table>
-        <form action="thanks.html" method="get">
+        <form action="thanks.html" method="post" id="partner" onsubmit="return partner()">
         <caption><p>If you would like to become a partner, fill in the form below with the partnership in mind, and we will get in touch!</p></caption>
         <tr>
         <td><label for="name">Your Name</label></td>
@@ -91,6 +92,7 @@
                 <input type="submit">
             </td>
         </tr>
+        <p id="myerror" style="color: red;"></p>
     </form>
     </table>
 </section>
