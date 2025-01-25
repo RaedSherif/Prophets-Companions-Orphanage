@@ -67,32 +67,32 @@
 <section id="Contribute">
     <h2>Partner With Us!</h2>
     <table>
-        <form action="thanks.html" method="post" id="partner" onsubmit="return partner()">
+        <form action="thanks.html" method="post" id="partner" onsubmit=" return partner()">
         <caption><p>If you would like to become a partner, fill in the form below with the partnership in mind, and we will get in touch!</p></caption>
         <tr>
         <td><label for="name">Your Name</label></td>
-        <td><input id="name" name="name" type="text" required></td>
+        <td><input id="name" name="name" type="text"></td>
         </tr>
         <tr>
         <td><label for="organization">Your Organization</label></td>
-        <td><input id="organization" name="organization" type="text" required></td>
+        <td><input id="organization" name="organization" type="text"></td>
         </tr>
 
         <tr>
         <td><label for="email">Your Email</label></td>
-        <td><input id="email" name="email" type="email" required></td>
+        <td><input id="email" name="email" type="text"></td>
         </tr>
 
         <tr>
         <td><label for="partnershipDescription">How could we potentially work together?</label></td>
-        <td><input id="partnershipDescription" type="text" required></td>
+        <td><input id="partnershipDescription" type="text"></td>
         </tr>
         <tr>
             <td colspan="2" style="text-align: center;">
                 <input type="submit">
             </td>
         </tr>
-        <p id="myerror" style="color: red;"></p>
+        <p id="error" style="color: red;"></p>
     </form>
     </table>
 </section>

@@ -64,38 +64,21 @@
               </p>
             </section>
           
-            <section class="donation-options">
-              <h2>Donation Options</h2>
-              <div class="donation-option">
-                <h3>One-Time Donation</h3>
-                <p>Make a single contribution of any amount.</p>
-                <a href="#donate-form" class="cta-button">Donate Now</a>
-              </div>
-              <div class="donation-option">
-                <h3>Monthly Donation</h3>
-                <p>Support us every month with a recurring donation.</p>
-                <a href="#donate-form" class="cta-button">Become a Monthly Donor</a>
-              </div>
-            </section>
-          
             <section class="donate-form" id="donate-form">
               <h2>Donate Now</h2>
               <img src="images/kid_study.jpeg">
-              <form action="thanks.html" method="get">
-                  <div>
-                      <label for="donation-amount">Donation Amount:</label><br>
-                      <input type="number" id="donation-amount" name="amount" required><br>
-                  </div>
-                  <div>
-                      <label for="donation-frequency">Donation Frequency:</label><br>
-                      <select id="donation-frequency" name="frequency">
-                          <option value="one-time">One-Time</option>
-                          <option value="monthly">Monthly</option>
-                      </select><br>
-                  </div>
+              <form action="thanks.html" method="get" onsubmit=" return donation()">
                   <div>
                       <label for="donor-name">Your Name:</label><br>
-                      <input type="text" id="donor-name" name="name" required><br>
+                      <input type="text" id="donor-name" name="name" placeholder="Enter Your Name" required><br>
+                  </div>
+                  <div>
+                    <label for="age">Age:</label><br>
+                    <input type="number" placeholder="Enter Your Age" name="age" id="age" required>
+                  </div>
+                  <div>
+                      <label for="donation-amount">Donation Amount:</label><br>
+                      <input type="number" id="donation-amount" name="amount" placeholder="Enter Donation Amount" required><br>
                   </div>
                   <div style="text-align: center;">
                       <button type="submit" class="cta-button">Donate</button>

@@ -38,3 +38,26 @@ function addRow() {
     newRow.insertCell(2).textContent = gender.charAt(0).toUpperCase() + gender.slice(1); // Capitalize the gender
     newRow.insertCell(3).textContent = date;
 }
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Retrieve donations from localStorage
+    const donations = JSON.parse(localStorage.getItem("donations")) || [];
+  
+    // Get the table body
+    const tableBody = document.getElementById("childrenTable").querySelector("tbody");
+  
+    // Populate the table with donations
+    donations.forEach((donation) => {
+      const row = document.createElement("tr");
+  
+      row.innerHTML = `
+        <td>${donation.name}</td>
+        <td>${donation.amount}</td>
+        <td>${donation.date}</td>
+      `;
+  
+      tableBody.appendChild(row);
+    });
+  });
+  
